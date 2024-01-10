@@ -1,0 +1,28 @@
+{
+  "sns": {
+    "create_topic": {
+      "cloud": "aws",
+      "enabled": true,
+      "help": "",
+      "template_section": "",
+      "template_enabled": true,
+      "metadata_table": "metadata",
+      "create_aws_infra": true,
+      "id": "topic_name",
+      "args": {
+        "topic_name": {
+          "name": "topic_name",
+          "prompt": "Enter Name of the topic with no spaces",
+          "required": true,
+          "default": ""
+        },
+        "tags": {
+          "name": "tags",
+          "prompt": "Provide a json string with tags you wish to apply to the Eventbus, for example \"{'tag1':'value1','tag2':'value2'}\"",
+          "required": false,
+          "default": "{}"
+        }
+      }
+    }
+  }
+}
